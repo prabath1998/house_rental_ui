@@ -9,6 +9,7 @@ import { HousingService } from './services/housing.service';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
+import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,14 @@ const appRoutes: Routes = [
   {
     path: '',
     component: PropertyListComponent,
+  },
+  {
+    path: 'rent-property',
+    component: PropertyListComponent,
+  },
+  {
+    path: 'property-detail/:id',
+    component: PropertyDetailComponent,
   },
 ];
 
@@ -29,6 +38,7 @@ const appRoutes: Routes = [
     NavBarComponent,
     AddPropertyComponent,
     CarouselComponent,
+    PropertyDetailComponent
   ],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
   providers: [HousingService,CarouselComponent],
