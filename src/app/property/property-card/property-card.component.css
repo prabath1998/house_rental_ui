@@ -1,5 +1,6 @@
 .card {
   min-height: 400px;
+  cursor: pointer;
 }
 
 .card-body h1 {
