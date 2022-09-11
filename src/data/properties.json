@@ -3,54 +3,72 @@
     "id": 1,
     "type": "Apartment",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 2,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 3,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 4,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 5,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 6,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":1,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 7,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":2,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 8,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":2,
+    "price": 12000,
+    "image":"prop-1"
   },
   {
     "id": 9,
     "type": "House",
     "name": "Birla house",
-    "price": 12000
+    "sellrent":2,
+    "price": 12000,
+    "image":"prop-1"
   }
 ]

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class HousingService {
   constructor(private http: HttpClient) {}
 
-  getAllProperties() {
+  getAllProperties(sellRent:number) {
     return this.http.get('data/properties.json');
   }
 }
