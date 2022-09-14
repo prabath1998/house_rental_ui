@@ -10,6 +10,7 @@ import { AddPropertyComponent } from './property/add-property/add-property.compo
 import { Routes, RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {
@@ -42,9 +43,10 @@ const appRoutes: Routes = [
     NavBarComponent,
     AddPropertyComponent,
     CarouselComponent,
-    PropertyDetailComponent
+    PropertyDetailComponent,
+
   ],
-  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes),FormsModule,ReactiveFormsModule],
   providers: [HousingService,CarouselComponent],
   bootstrap: [AppComponent],
 })
