@@ -9,7 +9,7 @@ import { Property } from '../Property.interface';
   styleUrls: ['./property-list.component.css'],
 })
 export class PropertyListComponent implements OnInit {
-  properties!: any;
+  properties!: Array<Property>;
   sellRent = 1;
 
   constructor(private housingService: HousingService,private route:ActivatedRoute) {}
