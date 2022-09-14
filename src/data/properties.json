@@ -50,7 +50,7 @@
   {
     "id": 7,
     "type": "House",
-    "name": "Birla house",
+    "name": "Birla house for rent",
     "sellrent":2,
     "price": 12000,
     "image":"prop-1"
@@ -58,17 +58,17 @@
   {
     "id": 8,
     "type": "House",
-    "name": "Birla house",
+    "name": "Birla house for rent",
     "sellrent":2,
-    "price": 12000,
+    "price": 16000,
     "image":"prop-1"
   },
   {
     "id": 9,
     "type": "House",
-    "name": "Birla house",
+    "name": "Birla house for rent",
     "sellrent":2,
-    "price": 12000,
+    "price": 12900,
     "image":"prop-1"
   }
 ]
