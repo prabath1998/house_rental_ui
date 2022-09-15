@@ -10,8 +10,9 @@ import { AddPropertyComponent } from './property/add-property/add-property.compo
 import { Routes, RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
 const appRoutes: Routes = [
   {
     path: 'add-property',
@@ -30,6 +31,14 @@ const appRoutes: Routes = [
     component: PropertyDetailComponent,
   },
   {
+    path: 'user/login',
+    component: UserLoginComponent,
+  },
+  {
+    path: 'user/register',
+    component: UserRegistrationComponent,
+  },
+  {
     path: '**',
     component: PropertyListComponent,
   },
@@ -44,10 +53,17 @@ const appRoutes: Routes = [
     AddPropertyComponent,
     CarouselComponent,
     PropertyDetailComponent,
-
+    UserRegistrationComponent,
+    UserLoginComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes),FormsModule,ReactiveFormsModule],
-  providers: [HousingService,CarouselComponent],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [HousingService, CarouselComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
