@@ -13,6 +13,7 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserService } from './services/user.service';
 const appRoutes: Routes = [
   {
     path: 'add-property',
@@ -63,7 +64,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [HousingService, CarouselComponent],
+  providers: [HousingService, CarouselComponent,UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
