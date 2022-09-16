@@ -15,6 +15,11 @@ import { UserRegistrationComponent } from './user/user-registration/user-registr
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserService } from './services/user.service';
 import { AlertifyService } from './services/alertify.service';
+import { AuthService } from './services/auth.service';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 const appRoutes: Routes = [
   {
     path: 'add-property',
@@ -64,8 +69,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot()
   ],
-  providers: [HousingService, CarouselComponent,UserService,AlertifyService],
+  providers: [HousingService, CarouselComponent,UserService,AlertifyService,AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
