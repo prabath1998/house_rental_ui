@@ -6,8 +6,10 @@ import {
   Validators,
 } from '@angular/forms';
 import { User } from 'src/app/models/User';
+import { AlertifyService } from 'src/app/services/alertify.service';
 import { UserService } from 'src/app/services/user.service';
 import { MustMatch } from 'src/app/shared/validators/must-match.validator';
+// import * as alertify from 'alertifyjs';
 
 @Component({
   selector: 'app-user-registration',
@@ -20,7 +22,7 @@ export class UserRegistrationComponent implements OnInit {
   user!: User;
   userSubmitted!:boolean;
 
-  constructor(private fb: FormBuilder, private userService: UserService) {}
+  constructor(private fb: FormBuilder, private userService: UserService,private alertify:AlertifyService) {}
 
   ngOnInit(): void {
     this.createRegisterationForm();
@@ -55,6 +57,9 @@ export class UserRegistrationComponent implements OnInit {
       this.userService.addUser(this.userData());
       this.registrationForm.reset();
       this.userSubmitted = false;
+      this.alertify.success("Successfylly Registered..!");
+    }else{
+      this.alertify.error("Kindly Provide The Required Fields..!")
     }
   }
 
