@@ -19,6 +19,8 @@ import { AuthService } from './services/auth.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 const appRoutes: Routes = [
   {
@@ -70,7 +72,9 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot()
   ],
   providers: [HousingService, CarouselComponent,UserService,AlertifyService,AuthService],
   bootstrap: [AppComponent],
